@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = [
+        5, 7,
+        [4, [2], 8, [1, 3], 2],
+        [9, [7]],
+        1, 9
+    ];
+
+    function iterator(arr) {
+        var item;
+        for (var j = 0; j < arr.length; j++) {
+            item = arr[j];
+
+            if (typeof item === "object") {
+                iterator(item);
+            } else {
+                callback(item);
+            }
+        }
+    }
+    var data = [];
+
+    function callback(item) {
+        data.push(item)
+    }
+
+    iterator(arr);
+    var total = 0;
+    for (var i = 0; i < data.length; i++) {
+        total = total + data[i];
+    }
+
+    console.log(total)
+
+</script>
+
+
+
+
+</body>
+</html>
