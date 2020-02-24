@@ -1,0 +1,108 @@
+@media (max-width: 780px){
+    .header__inner{
+        display: none;
+    }
+
+    .header__mob{
+        display: block;
+        text-align: center;
+    }
+
+    .logo{
+        display: inline-block;
+        width: 86px;
+        height: 54px;
+        padding: 0px 0 10px 90px;
+        vertical-align: middle;
+    }
+
+    .header__mob span{
+        display: inline-block;
+        color: #ffffff;
+        padding: 10px 0;
+        font-size: 36px ;
+        margin: 0 40px 0 40px;
+    }
+
+    .header__mob .user_photo{
+        width: 60px;
+        height: 60px;
+        border-radius: 4px;
+        margin-right: 45px;
+        vertical-align: top;
+    }
+    
+    .header__mob .icon-search{
+        font-size: 36px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .icon-navicon{
+        display: inline-block;
+        font-size: 30px;
+        vertical-align: bottom;
+        padding: 0px 0 20px;
+        color: #ffffff;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .nav__list li{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .content h1 {
+        text-align: center;
+        padding: 30px 0 20px 0px;
+    }
+}
+
+@media (max-width: 630px){
+    .header__mob span{
+        font-size: 20px;
+        margin: 0 20px 0 20px;
+    }
+
+    .logo{
+        width: 60px;
+        height: 40px;
+        padding: 0px 0 10px 40px;
+    }
+
+    .header__mob .user_photo{
+        width: 45px;
+        height: 45px;
+        margin-right: 25px;
+    }
+
+    .icon-navicon{
+        font-size: 30px;
+        padding: 0px 0 15px;
+    }
+
+    .header__mob .icon-search{
+        font-size: 20px;
+    }
+
+    .form{
+        display: block;
+        text-align: end;
+    }
+
+    form{
+        display: none;
+    }
+}
