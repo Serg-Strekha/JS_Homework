@@ -46,18 +46,29 @@
         color: #ffffff;
     }
 
-    .nav__list {
-        display: none;
+    .nav{
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        top: 68px;
+        left: -100%;
+        transition-duration: 0.3s;
     }
 
     .active{
-        display: block;
+        left: 0px;
     }
 
     .nav__list li{
         display: block;
         text-align: center;
         margin: 0;
+        padding: 0;
+    }
+
+    .nav__list li a{
+        display: block;
+        padding: 10px 0;
     }
 
     .menu{
@@ -95,6 +106,10 @@
 
     .header__mob .icon-search{
         font-size: 20px;
+    }
+
+    .nav {
+        top: 50px;
     }
 
     .form{
