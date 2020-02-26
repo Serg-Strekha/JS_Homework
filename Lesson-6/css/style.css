@@ -125,7 +125,7 @@ section {
 
 .menu li {
     list-style-type: none;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
     border-left: solid white 5px;
     transition-duration: 0.3s;
 
