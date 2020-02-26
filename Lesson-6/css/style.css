@@ -1,21 +1,28 @@
-body{
+html {
+    height: 100%;
+}
+
+body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     background-color: #f2f4f8;
-
+    min-width: 500px;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-.container{
+.container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 10px;
+    height: 100%;
 }
 
-header{
+header {
     background-color: #2d313d;
 }
 
-.header__mob{
+.header__mob {
     display: none;
 }
 
@@ -27,12 +34,12 @@ header{
 
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: space-between;
 }
 
-.header__right a{
+.header__right a {
     display: inline-block;
     color: #727989;
     margin-left: 32px;
@@ -42,15 +49,15 @@ header{
 
 }
 
-.header__right a:hover{
+.header__right a:hover {
     color: #ffffff;
 }
 
-.header__right .city{
+.header__right .city {
     padding-right: 20px;
 }
 
-.header__right .city span{
+.header__right .city span {
     border-bottom: dashed 1px;
 }
 
@@ -62,14 +69,14 @@ header{
 
 }
 
-.user_photo{
+.user_photo {
     display: inline-block;
     padding-left: 3px;
     vertical-align: middle;
 }
 
 /* Стили для блока nav*/
-.nav{
+.nav {
     background-color: #646d81;
 }
 
@@ -77,7 +84,7 @@ header{
     display: none;
 }
 
-.nav__list li{
+.nav__list li {
     display: inline-block;
     margin-right: 25px;
     border-top: solid #646d81 5px;
@@ -86,32 +93,37 @@ header{
     transition-duration: 0.3s;
 }
 
-.nav__list li a{
+.nav__list li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 0;
 }
 
-.nav__list li:hover{
+.nav__list li:hover {
     border-color: white;
 
 }
 
 /*Стили для блока section*/
 
-.main{
+section {
+    height: 100%;
+}
+
+.main {
     background-color: #fff;
     display: flex;
+    height: 100%;
 
 }
 
-.menu{
+.menu {
     padding-top: 20px;
     min-width: 180px;
     border-right: solid 1px #e0e4ed;
 }
 
-.menu li{
+.menu li {
     list-style-type: none;
     padding: 10px 0px 10px 0px;
     border-left: solid white 5px;
@@ -120,44 +132,52 @@ header{
 
 }
 
-.menu li:hover{
+.menu li:hover {
     border-left: solid #646d81 5px;
     background-color: #f8f8f8;
 
 }
 
-.menu li:hover a{
+.menu li:hover a {
     color: #000000;
 }
 
-.menu li a{
+.menu li a {
+    display: inline-block;
     text-decoration: none;
     color: #99a1b3;
-    padding: 10px 28px 10px 23px;
+    padding: 0 28px 0 23px;
 }
 
-.submenu{
+.main .menu .submenu {
     display: inline-block;
     margin-top: 32px;
-    padding: 9px 28px 9px 30px;
+    padding: 9px 28px 9px 23px;
     font-size: 18px;
     font-family: Georgia, sans-serif;
     color: #000000;
 }
 
-.menu .submenu:hover{
+.menu .submenu:hover {
     border-left: solid white 5px;
     background-color: #fff;
 }
 
+
+
 /*Стили для блока content*/
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
-.content h1{
+.content__inner {
+    flex: 1 0 auto;
+}
+
+.content h1 {
     padding: 30px 0 20px 30px;
     font-family: Georgia, sans-serif;
     font-size: 30px;
@@ -165,20 +185,20 @@ header{
 
 }
 
-.content .city{
+.content .city {
     margin-left: 20px;
     border-bottom: dashed 1px #646d81;
     position: relative;
 }
 
-.content .city:after{
+.content .city:after {
     font-family: icomoon;
     content: "\f107";
     position: absolute;
     right: -25px;
 }
 
-.form{
+.form {
     background-color: #f2f4f8;
     padding: 5px 30px;
     color: #99a1b3;
@@ -186,7 +206,7 @@ header{
     justify-content: space-between;
 }
 
-.form__input{
+.form__input {
     padding-left: 10px;
     outline: none;
     -webkit-appearance: none;
@@ -199,17 +219,17 @@ header{
 
 }
 
-.form__item{
+.form__item {
     padding: 11px 0;
 }
 
-.form__item span{
+.form__item span {
     font-family: Georgia, sans-serif;
     display: inline-block;
     margin-right: 100px;
 }
 
-.form__item .icon-sliders{
+.form__item .icon-sliders {
     display: inline-block;
 }
 
@@ -220,7 +240,7 @@ header{
 
 /*Стили для блока post*/
 
-.post{
+.post {
     margin: 30px;
     font-size: 12px;
 }
@@ -229,71 +249,71 @@ header{
 /*    display: flex;*/
 /*}*/
 
-.post__inner img{
+.post__inner img {
     float: left;
     width: 60px;
     display: inline-block;
     margin-right: 15px;
 }
 
-.post__item{
+.post__item {
     margin-left: 75px;
 }
 
-.post__item--top{
+.post__item--top {
     display: flex;
     justify-content: space-between;
 }
 
-.post__item--top span{
+.post__item--top span {
     color: #99a1b3;
 }
 
-.members{
+.members {
     padding: 5px 15px;
     background-color: #f2f4f8;
     border-radius: 5px;
     margin-left: 26px;
 }
 
-.post__item--top .post__comments span{
+.post__item--top .post__comments span {
     padding-left: 20px;
     position: relative;
 }
 
-.comm:before{
+.comm:before {
     position: absolute;
     left: 0;
     font-family: icomoon;
     content: "\e96d";
 }
 
-.time:before{
+.time:before {
     position: absolute;
     left: 6px;
     font-family: icomoon;
     content: "\f017";
 }
 
-.post__title{
+.post__title {
     color: #4f9cd4;
     font-weight: bold;
     font-size: 16px;
     padding: 5px 0 5px;
 }
 
-.post__text{
+.post__text {
     font-size: 14px;
     padding-bottom: 14px;
 }
 
-.post__tags span{
+.post__tags span {
     color: #99a1b3;
     padding-left: 15px;
     position: relative;
 }
 
-.post__tags span:before{
+.post__tags span:before {
     position: absolute;
     left: 0;
     font-family: icomoon;
@@ -302,13 +322,13 @@ header{
 
 /*Стили для длока Buttons*/
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: center;
     padding: 30px 0;
 }
 
-.buttons a{
+.buttons a {
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -316,15 +336,20 @@ header{
     padding: 10px 18px 10px 13px;
     border: solid #99a1b3 1px;
     border-radius: 4px;
+    transition-duration: 0.3s;
 }
 
-.prev:before{
+.buttons a:hover {
+    background-color: #f2f4f8;
+}
+
+.prev:before {
     font-family: icomoon;
     content: "\f104";
     padding-right: 10px;
 }
 
-.next:after{
+.next:after {
     font-family: icomoon;
     content: "\f105";
     padding-left: 10px;
@@ -332,13 +357,17 @@ header{
 
 /*Стили для блока footer*/
 
+.footer {
+    flex: 0 0 auto;
+}
+
 .footer nav {
     background-color: #f2f4f8;
     padding-left: 28px;
     margin-bottom: 1px;
 }
 
-.footer nav a{
+.footer nav a {
     text-decoration: none;
     display: inline-block;
     padding: 14px 5px;
@@ -346,13 +375,13 @@ header{
     color: #99a1b3;
 }
 
-.footer nav a:hover{
+.footer nav a:hover {
     background-color: #ABADB1;
     color: #ffffff;
     border-radius: 3px;
 }
 
-.copy{
+.copy {
     background-color: #f2f4f8;
     padding: 14px 0 14px 28px;
     color: #99a1b3;

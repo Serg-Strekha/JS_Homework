@@ -1,14 +1,14 @@
-@media (max-width: 780px){
+@media (max-width: 780px) {
     .header__inner{
         display: none;
     }
 
-    .header__mob{
+    .header__mob {
         display: block;
         text-align: center;
     }
 
-    .logo{
+    .logo {
         display: inline-block;
         width: 86px;
         height: 54px;
@@ -16,7 +16,7 @@
         vertical-align: middle;
     }
 
-    .header__mob span{
+    .header__mob span {
         display: inline-block;
         color: #ffffff;
         padding: 10px 0;
@@ -24,7 +24,7 @@
         margin: 0 40px 0 40px;
     }
 
-    .header__mob .user_photo{
+    .header__mob .user_photo {
         width: 60px;
         height: 60px;
         border-radius: 4px;
@@ -32,13 +32,13 @@
         vertical-align: top;
     }
     
-    .header__mob .icon-search{
+    .header__mob .icon-search {
         font-size: 36px;
         color: #ffffff;
         text-decoration: none;
     }
 
-    .icon-navicon{
+    .icon-navicon {
         display: inline-block;
         font-size: 30px;
         vertical-align: bottom;
@@ -51,27 +51,27 @@
         width: 100%;
         z-index: 2;
         top: 68px;
-        left: -100%;
+        left: -900px;
         transition-duration: 0.3s;
     }
 
-    .active{
+    .active {
         left: 0px;
     }
 
-    .nav__list li{
+    .nav__list li {
         display: block;
         text-align: center;
         margin: 0;
         padding: 0;
     }
 
-    .nav__list li a{
+    .nav__list li a {
         display: block;
         padding: 10px 0;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
@@ -81,30 +81,30 @@
     }
 }
 
-@media (max-width: 630px){
-    .header__mob span{
+@media (max-width: 630px) {
+    .header__mob span {
         font-size: 20px;
         margin: 0 20px 0 20px;
     }
 
-    .logo{
+    .logo {
         width: 60px;
         height: 40px;
         padding: 0px 0 10px 40px;
     }
 
-    .header__mob .user_photo{
+    .header__mob .user_photo {
         width: 45px;
         height: 45px;
         margin-right: 25px;
     }
 
-    .icon-navicon{
+    .icon-navicon {
         font-size: 30px;
         padding: 0px 0 15px;
     }
 
-    .header__mob .icon-search{
+    .header__mob .icon-search {
         font-size: 20px;
     }
 
@@ -112,12 +112,12 @@
         top: 50px;
     }
 
-    .form{
+    .form {
         display: block;
         text-align: end;
     }
 
-    form{
+    form {
         display: none;
     }
 }
