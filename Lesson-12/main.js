@@ -1,20 +1,14 @@
 // Задание 1:
 // Написать функцию, принимающую массив имен и возвращающую массив объектов вида {name: 'Vasya'}.
 
-var names = [
-    'Vasia',
-    'Petr',
-    'Ivan'
-    ];
+var names = ['Vasia','Petr','Ivan'];
 
-var namesObject = names.map(function(element) {
+names.map(function(element) {
     var obj = {};
     obj.name = element;
 
     return obj;
-    });
-
-console.log(namesObject);
+});
 
 // Задание 2:
 // Написать функцию, принимающую массив вида ['00', '13', '24'] и возвращающую строку "Текущее время : 00 : 13 : 24".
@@ -25,9 +19,9 @@ var arr = ['00', '13', '24'];
 function getTime (arr) {
     var time = arr.reduce(function(previousValue, currentItem) {
         return previousValue + ' : ' + currentItem;
-    });
+    },'Текущее время'); // в качестве параметра по умолчанию
 
-    console.log('Текущее время : ' + time);
+    console.log(time);
 }
 
 getTime (arr);
@@ -38,7 +32,7 @@ getTime (arr);
 
 function findVowels(str) {
     var count = 0;
-    var vowels = ["а", "о", "и", "е", "ё", "э", "ы", "у", "ю", "я"];
+    var vowels = ['а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я'];
     var arrLetters = str.toLowerCase().split('');
 
     arrLetters.forEach(function(char){
@@ -46,9 +40,7 @@ function findVowels(str) {
             count +=1;
         }
     });
-
     return count;
-
 }
 
 findVowels('Ёжик');
@@ -79,22 +71,19 @@ function countSentencesLetters(str) {
                 count +=1;
             }
         });
-
         return count;
-
     }
 
-    var arrStr = str.split('!').join(':/').split('...').join(':/').split('?').join(':/').split('/');
-
-    var arrStr2 = arrStr.map(function(str1){
-
-        return str1.trim() + ' Letters quantity is: ' + getNumberOfLetters(str1);
-
+    var arrStr = str.split(/\...|\!|\?/).map(function(str1){
+        if (str1.length) {
+            return str1.trim() + ': Letters quantity is: ' + getNumberOfLetters(str1);
+        }
     });
 
-    arrStr2.pop();
+    arrStr.forEach(function(item) {
+        console.log(item);
+    });
 
-    console.log(arrStr2);
 }
 
-    countSentencesLetters('Привет, студент! Студент... Как дела, студент?');
+countSentencesLetters('Привет, студент! Студент... Как дела, студент?');
