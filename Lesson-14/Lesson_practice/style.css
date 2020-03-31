@@ -1,0 +1,12 @@
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: normal;
+}
+
+.changed {
+    text-decoration: underline;
+    color: darkblue;
+    font-weight: bold;
+}
